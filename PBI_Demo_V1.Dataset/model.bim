@@ -472,18 +472,6 @@
             "expression": "COUNT(CAVA_EPOS_View[Parent Work Item Id])",
             "formatString": "0",
             "lineageTag": "b7adebe7-1490-4e09-9d5d-89f9a72c4164"
-          },
-          {
-            "name": "Test_Measure_4",
-            "expression": "COUNT(CAVA_EPOS_View[Title])",
-            "formatString": "0",
-            "lineageTag": "edfe5d5e-98bf-4cfa-aa31-a9f29706becf"
-          },
-          {
-            "name": "Test_Measure_5",
-            "expression": "COUNT(CAVA_EPOS_View[Title])",
-            "formatString": "0",
-            "lineageTag": "79b3eff1-6d41-4dd1-96b0-71223ff1aa2b"
           }
         ],
         "partitions": [
