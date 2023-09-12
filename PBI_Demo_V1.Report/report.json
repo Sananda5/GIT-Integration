@@ -1,0 +1,143 @@
+{
+  "config": "{\"version\":\"5.44\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY18SU07\",\"version\":\"3.15\",\"type\":2},\"customTheme\":{\"name\":\"CityPark\",\"version\":\"5.45\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"pauseQueries\":false},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "filters": "[{\"name\":\"Filter78cd6dc0f636c84fc235\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CAVA_EPOS_View\"}},\"Property\":\"Assigned To\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection0c9a490a6dc1060a51fb",
+      "config": "{}",
+      "name": "Pod",
+      "parameters": "[{\"name\":\"Param_Filter2042e90a75010741d2ee\",\"boundFilter\":\"Filter2042e90a75010741d2ee\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CAVA_EPOS_View\"}},\"Property\":\"Work Item Id\"}},\"asAggregation\":true}]",
+      "type": 1
+    }
+  ],
+  "publicCustomVisuals": [],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY18SU07",
+            "path": "BaseThemes/CY18SU07.json",
+            "type": 202
+          },
+          {
+            "name": "CityPark",
+            "path": "BuiltInThemes/CityPark.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Project Overview",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"071902e0b1e069cb1ff8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368.7164179104478,\"y\":0,\"z\":5000,\"width\":271.2835820895522,\"height\":128,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Test_View.Open_Items_Priority_1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"CAVA_EPOS_View\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Open_Items_Priority_2\"},\"Name\":\"Test_View.Open_Items_Priority_1\",\"NativeReferenceName\":\"Open_Items_Priority_1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Open_Items_Priority_2\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Count of Open Items Priority 2'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 128.00,
+          "width": 271.28,
+          "x": 368.72,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"52aeb17d95b608c72842\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":3000,\"width\":341.72185430463577,\"height\":127.15231788079471,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Test_View.Iteration Path\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"CAVA_EPOS_View\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Iteration Path\"},\"Name\":\"Test_View.Iteration Path\",\"NativeReferenceName\":\".\"}]},\"columnProperties\":{\"Test_View.Iteration Path\":{\"displayName\":\".\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sprint'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 127.15,
+          "width": 341.72,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"5bf26cb42289bd5a89cd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":659.6026490066225,\"y\":357.6158940397351,\"z\":2000,\"width\":602.384105960265,\"height\":362.3841059602649,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Test_View.Work Item Type\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Test_View.Work Item Id)\"}],\"Series\":[{\"queryRef\":\"Test_View.State\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"CAVA_EPOS_View\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Work Item Type\"},\"Name\":\"Test_View.Work Item Type\",\"NativeReferenceName\":\"Work Item Type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Work Item Id\"}},\"Function\":5},\"Name\":\"CountNonNull(Test_View.Work Item Id)\",\"NativeReferenceName\":\"Work Item Id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"State\"},\"Name\":\"Test_View.State\",\"NativeReferenceName\":\"State\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Work Item Id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Work Item Type Distribution '\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 362.38,
+          "width": 602.38,
+          "x": 659.60,
+          "y": 357.62,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"b0248213a75dd3e97468\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640.5298013245033,\"y\":0,\"z\":0,\"width\":638.9403973509934,\"height\":360.794701986755,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Test_View.Assigned To\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Test_View.Work Item Id)\"}],\"Series\":[{\"queryRef\":\"Test_View.State\"}],\"Tooltips\":[{\"queryRef\":\"CountNonNull(Test_View.Work Item Id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"CAVA_EPOS_View\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Assigned To\"},\"Name\":\"Test_View.Assigned To\",\"NativeReferenceName\":\"Assigned To\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Work Item Id\"}},\"Function\":2},\"Name\":\"CountNonNull(Test_View.Work Item Id)\",\"NativeReferenceName\":\"Count of Work Item Id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"State\"},\"Name\":\"Test_View.State\",\"NativeReferenceName\":\"State\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Work Item Id\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}],\"legend\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Overall Status and Count of Works Assigned  Item  '\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter53d20a005461635088c5\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CAVA_EPOS_View\"}},\"Property\":\"Iteration Path\"}},\"type\":\"Categorical\",\"howCreated\":1}]",
+          "height": 360.79,
+          "width": 638.94,
+          "x": 640.53,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b244d5f7b4965bc5afbb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":181.19205298013244,\"z\":4000,\"width\":301.9867549668874,\"height\":152.58278145695365,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Test_View.Tags\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"CAVA_EPOS_View\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Tags\"},\"Name\":\"Test_View.Tags\",\"NativeReferenceName\":\"Tags\"}]},\"columnProperties\":{\"Test_View.Tags\":{\"displayName\":\"Tags\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Project Name'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 152.58,
+          "width": 301.99,
+          "x": 0.00,
+          "y": 181.19,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"c39878d8a48272f6d794\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368.74172185430467,\"y\":168.476821192053,\"z\":6000,\"width\":271.7880794701987,\"height\":128.74172185430464,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Test_View.Closed_Items_Priority_2\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"CAVA_EPOS_View\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Closed_Items_Priority_2\"},\"Name\":\"Test_View.Closed_Items_Priority_2\",\"NativeReferenceName\":\"Closed_Items_Priority_2\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Closed_Items_Priority_2\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.2}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Count of Closed Items Priority 2'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 128.74,
+          "width": 271.79,
+          "x": 368.74,
+          "y": 168.48,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"e48b6e82490e14ba9605\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":370.33112582781456,\"z\":1000,\"width\":602.384105960265,\"height\":349.66887417218544,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Test_View.State\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Test_View.Work Item Id)\"}],\"Series\":[{\"queryRef\":\"Test_View.Iteration Path\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"CAVA_EPOS_View\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Work Item Id\"}},\"Function\":2},\"Name\":\"CountNonNull(Test_View.Work Item Id)\",\"NativeReferenceName\":\"Count of Work Item Id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"State\"},\"Name\":\"Test_View.State\",\"NativeReferenceName\":\"State\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Iteration Path\"},\"Name\":\"Test_View.Iteration Path\",\"NativeReferenceName\":\"Iteration Path\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Work Item Id\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Work Item Distribution per Sprint'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 349.67,
+          "width": 602.38,
+          "x": 0.00,
+          "y": 370.33,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1,\"type\":2}",
+      "displayName": "Work Item Details",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter2042e90a75010741d2ee\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CAVA_EPOS_View\"}},\"Property\":\"Work Item Id\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "ReportSection0c9a490a6dc1060a51fb",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"7458a726d0daa67e7f84\",\"layouts\":[{\"id\":0,\"position\":{\"x\":19.072847682119207,\"y\":39.735099337748345,\"z\":0,\"width\":1234.9668874172185,\"height\":665.9602649006623,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Test_View.Assigned To\"},{\"queryRef\":\"Test_View.Work Item Type\"},{\"queryRef\":\"Test_View.Title\"},{\"queryRef\":\"Sum(Test_View.Priority)\"},{\"queryRef\":\"Test_View.State\"},{\"queryRef\":\"CAVA_EPOS_View.Target Date\"},{\"queryRef\":\"Sum(CAVA_EPOS_View.Remaining Work)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"CAVA_EPOS_View\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Work Item Type\"},\"Name\":\"Test_View.Work Item Type\",\"NativeReferenceName\":\"Work Item Type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Assigned To\"},\"Name\":\"Test_View.Assigned To\",\"NativeReferenceName\":\"Assigned To\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Priority\"},\"Name\":\"Sum(Test_View.Priority)\",\"NativeReferenceName\":\"Priority1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"State\"},\"Name\":\"Test_View.State\",\"NativeReferenceName\":\"State\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Title\"},\"Name\":\"Test_View.Title\",\"NativeReferenceName\":\"Title\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Target Date\"},\"Name\":\"CAVA_EPOS_View.Target Date\",\"NativeReferenceName\":\"Target Date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Remaining Work\"},\"Name\":\"Sum(CAVA_EPOS_View.Remaining Work)\",\"NativeReferenceName\":\"Remaining Work1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Title\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"139.95366926977968D\"}}}},\"selector\":{\"metadata\":\"Test_View.State\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"197.84767943604373D\"}}}},\"selector\":{\"metadata\":\"Test_View.Work Item Type\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"215.05960167095276D\"}}}},\"selector\":{\"metadata\":\"Test_View.Assigned To\"}}],\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontColorPrimary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 665.96,
+          "width": 1234.97,
+          "x": 19.07,
+          "y": 39.74,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"ec98abb206aeb2ec6c6a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "CityPark"
+}

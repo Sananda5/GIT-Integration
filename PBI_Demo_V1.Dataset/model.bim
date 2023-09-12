@@ -1,0 +1,509 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.119.986.0 (23.07)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"CAVA_EPOS_View\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Entities": {
+              "cava_epos_view.iteration_path": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CAVA_EPOS_View",
+                    "ConceptualProperty": "Iteration Path"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    ".": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "cava_epos_view.tags": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CAVA_EPOS_View",
+                    "ConceptualProperty": "Tags"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Tags": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-IN",
+    "tables": [
+      {
+        "name": "CAVA_EPOS_View",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Activated By",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2c3165a6-52ea-42a0-b071-975a10cc7546",
+            "sourceColumn": "Activated By",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Activated Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "e43b9f3d-f68d-4721-9447-24a967e9e829",
+            "sourceColumn": "Activated Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Activity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "df7601c3-08f0-4360-93a7-c3104a1b0078",
+            "sourceColumn": "Activity",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Area Path",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2ec6d5de-acee-4b43-9acf-e61f7a0361b5",
+            "sourceColumn": "Area Path",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AreaSK",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "227ad629-08b5-40f8-bb96-d9e9c153e3dd",
+            "sourceColumn": "AreaSK",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Assigned To",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1a4ee6fe-bc81-4ddf-bb84-d651563d3798",
+            "sourceColumn": "Assigned To",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Business Value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "42e9a524-4254-4d1a-bc08-9ea8b20ad589",
+            "sourceColumn": "Business Value",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Changed By",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "101ebba5-65f7-4f8e-9876-66e38f2aa9ea",
+            "sourceColumn": "Changed By",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Changed Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "44a96a5d-21e3-4cda-949d-64b16ca0cb4c",
+            "sourceColumn": "Changed Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Closed By",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dbf32c9e-d88c-4d58-9021-1d5d7eb32f77",
+            "sourceColumn": "Closed By",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Closed Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "d10e5373-90d5-45de-9065-4208cc76fe7d",
+            "sourceColumn": "Closed Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Completed Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "173a09ef-0078-41b6-9c46-33e332f58959",
+            "sourceColumn": "Completed Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Created Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "c74d2307-ac0c-44c8-be54-a7882ba1dcd6",
+            "sourceColumn": "Created Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Iteration Path",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d0126841-27bf-4f0c-b5de-cf50c249c10b",
+            "sourceColumn": "Iteration Path",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Parent Work Item Id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "88bdc5f4-1617-4a25-afc6-2e24f8499f7a",
+            "sourceColumn": "Parent Work Item Id",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Priority",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0eac3043-0a10-41e6-a67a-e24eff27ebff",
+            "sourceColumn": "Priority",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Remaining Work",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d869cf4e-929f-45dc-bc71-4751d32b5d8c",
+            "sourceColumn": "Remaining Work",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Resolved Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "64a6ad52-9310-4ca3-adc6-986cb58e88e9",
+            "sourceColumn": "Resolved Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Severity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f07aa27a-a724-4844-999a-f7f31137876f",
+            "sourceColumn": "Severity",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9263e357-aa28-40ff-9b9d-f86b9bb783d0",
+            "sourceColumn": "State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tags",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "32f72dd3-4af7-454b-903d-8d386e1c3ec6",
+            "sourceColumn": "Tags",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Target Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "4cf6cf17-8802-4f79-9e4a-c9a3920d56af",
+            "sourceColumn": "Target Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Title",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1f8fd227-cda8-418e-89b0-efc1d095ff50",
+            "sourceColumn": "Title",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Value Area",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "855ca0c2-9ef5-4584-94f9-22e3fa0721ec",
+            "sourceColumn": "Value Area",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Work Item Id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2f5ef382-cb52-4b61-899a-b6ef6eb24c12",
+            "sourceColumn": "Work Item Id",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Work Item Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "30ff057f-b96d-4ae9-bda6-fa7c2b84da0e",
+            "sourceColumn": "Work Item Type",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "9866672f-9ba4-471b-aa2b-5a7ea820abaa",
+        "measures": [
+          {
+            "name": "Open_Items_Priority_2",
+            "expression": "CALCULATE(DISTINCTCOUNT(CAVA_EPOS_View[Work Item Id]),CAVA_EPOS_View[State]=\"New\" ||CAVA_EPOS_View[State]=\"Active\" ,CAVA_EPOS_View[Priority]=2)",
+            "formatString": "0",
+            "lineageTag": "96a7bae3-5a1b-45f4-836c-ebcd6a2f7a56"
+          },
+          {
+            "name": "Closed_Items_Priority_2",
+            "expression": "CALCULATE(DISTINCTCOUNT(CAVA_EPOS_View[Work Item Id]),CAVA_EPOS_View[State]=\"Closed\" ,CAVA_EPOS_View[Priority]=2)",
+            "formatString": "0",
+            "lineageTag": "8b4a05d4-e523-45de-bef1-c6a801c2ac8a"
+          },
+          {
+            "name": "Test_Measure",
+            "expression": "SUM(CAVA_EPOS_View[State])",
+            "formatString": "0",
+            "lineageTag": "d63ae5a3-ab7d-45fc-8773-19fdbb482a5c"
+          },
+          {
+            "name": "Test_Measure_2",
+            "expression": "COUNT(CAVA_EPOS_View[Parent Work Item Id])",
+            "formatString": "0",
+            "lineageTag": "b7adebe7-1490-4e09-9d5d-89f9a72c4164"
+          },
+          {
+            "name": "Test_Measure_4",
+            "expression": "COUNT(CAVA_EPOS_View[Title])",
+            "formatString": "0",
+            "lineageTag": "edfe5d5e-98bf-4cfa-aa31-a9f29706becf"
+          },
+          {
+            "name": "Test_Measure_5",
+            "expression": "COUNT(CAVA_EPOS_View[Title])",
+            "formatString": "0",
+            "lineageTag": "79b3eff1-6d41-4dd1-96b0-71223ff1aa2b"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CAVA_EPOS_View-a4cfdb71-8ff4-4b1c-a2cd-7296d239966a",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = VSTS.AnalyticsViews(\"seu-sqe-lakehouse-pf\", \"sqe-epos-reportingstream-01\", []),",
+                "    #\"Private Views_Folder\" = Source{[Id=\"Private Views\",Kind=\"Folder\"]}[Data],",
+                "    #\"b97f3b26-816a-4973-b39a-e96c40c6f1d9_Table\" = #\"Private Views_Folder\"{[Id=\"b97f3b26-816a-4973-b39a-e96c40c6f1d9\",Kind=\"Table\"]}[Data]",
+                "in",
+                "    #\"b97f3b26-816a-4973-b39a-e96c40c6f1d9_Table\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

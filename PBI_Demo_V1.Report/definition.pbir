@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../PBI_Demo_V1.Dataset"
+    },
+    "byConnection": null
+  }
+}
