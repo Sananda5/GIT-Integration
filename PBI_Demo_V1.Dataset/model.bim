@@ -472,6 +472,12 @@
             "expression": "SUM(CAVA_EPOS_View[State])",
             "formatString": "0",
             "lineageTag": "ed5c244a-c45f-4ccd-bc99-afe30005cda6"
+          },
+          {
+            "name": "Test_Measure_new_1",
+            "expression": "SUM(CAVA_EPOS_View[State])",
+            "formatString": "0",
+            "lineageTag": "9f4a346b-7cb7-4820-be72-649880cba394"
           }
         ],
         "partitions": [
