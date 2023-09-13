@@ -468,10 +468,10 @@
             "lineageTag": "d63ae5a3-ab7d-45fc-8773-19fdbb482a5c"
           },
           {
-            "name": "Test_Measure_2",
-            "expression": "COUNT(CAVA_EPOS_View[Parent Work Item Id])",
+            "name": "Test_Measure_new",
+            "expression": "SUM(CAVA_EPOS_View[State])",
             "formatString": "0",
-            "lineageTag": "b7adebe7-1490-4e09-9d5d-89f9a72c4164"
+            "lineageTag": "ed5c244a-c45f-4ccd-bc99-afe30005cda6"
           }
         ],
         "partitions": [
